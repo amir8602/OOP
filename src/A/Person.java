@@ -38,4 +38,8 @@ public class Person {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public void talk() {
+        System.out.println("Person talk");
+    }
 }

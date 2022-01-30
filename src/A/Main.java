@@ -14,11 +14,17 @@ public class Main {
 //        Student student2 = new Student("Amir" , "Amiri" , 12 , book , "123");
 //        System.out.println(student.equals(student2));
 //
-        Student student = new Student();
-        Person person = new Person();
-        Student student1 = (Student) new Person();
-        Person person1 = new Student();
-        student1.getBook();
+//        Student student = new Student();
+//        Person person = student;
+//        Student student1 = (Student) person;
+//        Person person1 = new Student();
+//        student1.talk();
+//        person1.talk();
+
+//        Student student = new Student();
+//        Person person = new Student();
+//        student.equals(person);
+
 
 
     }

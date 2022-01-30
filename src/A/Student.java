@@ -34,9 +34,17 @@ public class Student extends Person {
         return String.format("[name : %s - family : %s - age :  %d ]", this.getName(), this.getFamily(), this.getAge());
     }
 
+    public void talk(){
+        System.out.println("Student talk");
+    }
+
     @Override
     public boolean equals(Object obj) {
+
         Student caller = this;
+        if(!(obj instanceof Student)){
+            System.out.println("insta");
+        }
         Student argument = (Student) obj;
         if (caller.getName().equals(argument.getName()))
             if (caller.getFamily().equals(argument.getFamily()))
