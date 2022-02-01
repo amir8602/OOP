@@ -16,5 +16,12 @@ public class Main {
         Hero h = b;
         CanFight c = b;
 
+        CustomeDog customeDog = new CustomeDog();
+        customeDog.sum(1,2);
+
+       CanFly canFly = ()->{
+           System.out.println("canfly");
+       };
+
     }
 }
