@@ -1,6 +1,8 @@
 package C;
 
-public class Person implements Comparable <Person> {
+import java.util.Comparator;
+
+public class Person implements Comparable<Person> {
     private String name;
     private String family;
     private Integer age;
@@ -53,12 +55,26 @@ public class Person implements Comparable <Person> {
 
     @Override
     public int compareTo(Person o) {
-        Person caller = this;
-        Person person = o;
-        if (caller.getAge()>person.getAge())
-            return 1;
-        else if(caller.getAge()<person.getAge())
-            return -1;
+        if (this.getAge()>o.getAge())return 1;
+        else if (this.getAge()<o.getAge()) return -1;
         else return 0;
     }
+
+//    @Override
+//    public int compareTo(Person o) {
+//        Person caller = this;
+//        Person person = o;
+//        if (caller.getAge()>person.getAge())
+//            return 1;
+//        else if(caller.getAge()<person.getAge())
+//            return -1;
+//        else return 0;
+//    }
+
+//    @Override
+//    public int compare(Person o1, Person o2) {
+//        if(o1.getAge()>o2.getAge())return 1;
+//        else if (o1.getAge()<o2.getAge()) return -1;
+//        else return 0;
+//    }
 }
