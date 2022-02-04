@@ -12,7 +12,10 @@ public class Main {
             System.out.println(e.getClass());
             System.out.println(e.line);
             System.out.println(e.msg);
+        }finally {
+            scanner.close();
         }
+        //try with resources
 
     }
 
