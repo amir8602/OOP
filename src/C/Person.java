@@ -44,6 +44,12 @@ public class Person implements Comparable<Person> {
         System.out.println("Person talk");
     }
 
+
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.printf("object destroy %s" , this.getName());
+    }
+
     @Override
     public String toString() {
         return "Person{" +

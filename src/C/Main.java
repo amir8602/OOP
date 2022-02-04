@@ -46,6 +46,12 @@ public class Main {
             System.out.println(person3);
         }
 
+        Person pp = new Person();
+        pp=null;
+        for (int i = 0; i <1000000000 ; i++) {
+            System.gc();
+        }
+
 
 
 
