@@ -18,30 +18,39 @@ public class Main {
 //
 //        System.out.println(PrintUtil.maxx(12, 55, 50));
 
-        Stack <String> stack1 = new Stack<String>(5);
-        stack1.push("alo");
-        stack1.push("salam");
-        stack1.push("chetone");
-        stack1.push("chi");
-        stack1.push("chi");
-        System.out.println(stack1.pop());
-        System.out.println(stack1.pop());
-        System.out.println(stack1.pop());
-        System.out.println(stack1.pop());
-        System.out.println(stack1.pop());
-
-        Stack <Integer> stack = new Stack<Integer>(3);
-        stack.push(4);
-        stack.push(5);
-        stack.push(100);
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
+//        Stack <String> stack1 = new Stack<String>(5);
+//        stack1.push("alo");
+//        stack1.push("salam");
+//        stack1.push("chetone");
+//        stack1.push("chi");
+//        stack1.push("chi");
+//        System.out.println(stack1.pop());
+//        System.out.println(stack1.pop());
+//        System.out.println(stack1.pop());
+//        System.out.println(stack1.pop());
+//        System.out.println(stack1.pop());
+//
+//        Stack <Integer> stack = new Stack<Integer>(3);
+//        stack.push(4);
+//        stack.push(5);
+//        stack.push(100);
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+//        System.out.println(stack.pop());
+////
+//
 //
 
-
-
+        Pair<Integer , String> pair = new Pair<Integer,String>(12,"ali");
+        Pair<Double,Double> pair1= new Pair<Double,Double>(3.4,3.4);
+        Pair<Double,Double> pair2= new Pair<Double,Double>(3.4,3.44);
+        System.out.println(pair1.equals(pair2));
+//        if(pair.equals(pair)){
+//            System.out.println("yes");
+//        }
+        System.out.println(pair1);
+        System.out.println(pair);
 
 
     }
