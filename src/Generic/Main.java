@@ -1,5 +1,7 @@
 package Generic;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 //        Integer[] arr = {2, 2, 3, 4, 5};
@@ -41,6 +43,14 @@ public class Main {
 ////
 //
 //
+
+        ArrayList <String> arrayList = new ArrayList<String>();
+        arrayList.add("amir");
+        arrayList.add("reza");
+        arrayList.get(0);
+
+
+
 
         Pair<Integer , String> pair = new Pair<Integer,String>(12,"ali");
         Pair<Double,Double> pair1= new Pair<Double,Double>(3.4,3.4);
