@@ -1,6 +1,9 @@
 package Generic;
 
+import sun.security.mscapi.CPublicKey;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,25 +46,38 @@ public class Main {
 ////
 //
 //
+//
+//        ArrayList<String> arrayList = new ArrayList<String>();
+//        arrayList.add("amir");
+//        arrayList.add("reza");
+//        arrayList.get(0);
+//
+//
+//        Pair<Integer, String> pair = new Pair<Integer, String>(12, "ali");
+//        Pair<Double, Double> pair1 = new Pair<Double, Double>(3.4, 3.4);
+//        Pair<Double, Double> pair2 = new Pair<Double, Double>(3.4, 3.44);
+//        System.out.println(pair1.equals(pair2));
+////        if(pair.equals(pair)){
+////            System.out.println("yes");
+////        }
+//        System.out.println(pair1);
+//        System.out.println(pair);
 
-        ArrayList <String> arrayList = new ArrayList<String>();
-        arrayList.add("amir");
-        arrayList.add("reza");
-        arrayList.get(0);
+
+
+        //unbound
+        List<?> ar = new ArrayList<>();
+        //upperbound
+        List<? extends Number> ar1 = new ArrayList<Integer>();
+        //lowerbound
+        List<? super Integer> ar2 = new ArrayList<>();
 
 
 
-
-        Pair<Integer , String> pair = new Pair<Integer,String>(12,"ali");
-        Pair<Double,Double> pair1= new Pair<Double,Double>(3.4,3.4);
-        Pair<Double,Double> pair2= new Pair<Double,Double>(3.4,3.44);
-        System.out.println(pair1.equals(pair2));
-//        if(pair.equals(pair)){
-//            System.out.println("yes");
-//        }
-        System.out.println(pair1);
-        System.out.println(pair);
 
 
     }
+
+    public static void print(List <? extends Integer > item ){}
+
 }
