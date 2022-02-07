@@ -1,6 +1,6 @@
 package Collections;
 
-public class Person<equals> {
+public class Person implements Comparable {
     private int age;
     private String name;
     private String family;
@@ -65,5 +65,16 @@ public class Person<equals> {
             if (caller.getFamily().equals(arg.getFamily()))
                 return true;
         return false;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Person arg = (Person) o;
+        return this.getAge()-arg.getAge();
+    }
+
+    @Override
+    public int hashCode() {
+        return this.getName().hashCode()*31+age+this.getFamily().hashCode()*3;
     }
 }
